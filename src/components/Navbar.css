@@ -1,0 +1,59 @@
+@font-face {
+  font-family: atmospheric;
+  src: url(../misc/aAtmospheric.ttf);
+}
+
+.Navbar_wrapper {
+  width: 100%;
+  height: auto;
+  color: white;
+
+}
+
+.Navbar_padding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+h1 {
+  font-family: atmospheric;
+}
+
+.Navbar_Links{
+  display: flex;
+}
+
+#navlinks{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0px 20px;
+  font-weight: 100;
+  color: white;
+}
+
+.toggle{
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .toggle{
+    display: flex;
+  }
+
+  .Navbar_Links{
+    display: none;
+
+  }
+
+  .Mobile_links{
+    z-index: -999999;
+    display: flex;
+    background: #ffffff;
+  }
+  
+}
+
+
