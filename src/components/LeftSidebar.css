@@ -1,25 +1,33 @@
 .Leftsidebar_wrapper {
-  height: 100vh;
+  position:absolute;
+  height: auto;
   width: auto;
   display: flex;
   align-items: center;
 }
 
 .Leftsidebar_wrapper_padding {
-  height: auto;
+  height: 100vh;
   width: 75px;
   display: block;
   text-align: center;
-  padding-top: 250px;
+  position: relative;
+  
   
 }
 
 .Social_Links_icons {
-    padding-top: 50px;
-    padding-bottom: 150px;
+    position: absolute;
+    top: 40%;
+    left: 25px;
+    
+    padding-bottom: 50px;
 }
 
 .Contact_Links_icons {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -36,5 +44,12 @@
 
 .Contact_Links_icons_div:hover{
     color: aqua;
+}
+
+@media only screen and (max-width: 768px) {
+    .Leftsidebar_wrapper{
+        display: none;
+    }
+
 }
 

@@ -3,6 +3,7 @@ import "./App.css";
 
 import Navbar from "./components/Navbar";
 import LeftSidebar from "./components/LeftSidebar";
+import Main from "./components/Main";
 
 import { Canvas } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
@@ -14,7 +15,11 @@ function App() {
   return (
     <div className="Div_wrapper">
       <Navbar />
-      <LeftSidebar />
+      <div className="Flex">
+        <LeftSidebar />
+        <Main />
+      </div>
+      
     </div>
   );
 }
