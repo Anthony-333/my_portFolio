@@ -1,0 +1,40 @@
+.Leftsidebar_wrapper {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.Leftsidebar_wrapper_padding {
+  height: auto;
+  width: 75px;
+  display: block;
+  text-align: center;
+  padding-top: 250px;
+  
+}
+
+.Social_Links_icons {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.Contact_Links_icons {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.Social_Links_icons_div,
+.Contact_Links_icons_div {
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.Social_Links_icons_div:hover{
+    color: aqua;
+}
+
+.Contact_Links_icons_div:hover{
+    color: aqua;
+}
+
