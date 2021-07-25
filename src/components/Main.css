@@ -28,7 +28,7 @@
 
 .Main_body_text h1{
     color: #fff;
-    font-size: 80px;
+    font-size: clamp( 5vw, 5vw, 80vh);
 
 }
 
@@ -52,5 +52,5 @@ h1.Welcome_text_3{
 }
 
 .Main_body_model img{
-    width: 850px;
+    width: 110%;
 }
