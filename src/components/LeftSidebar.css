@@ -40,8 +40,8 @@
     color: aqua;
 }
 
-@media only screen and (max-width: 768px) {
-    .Leftsidebar_wrapper, .Social_Links_icons{
+@media only screen and (max-width: 991px) {
+    .Leftsidebar_wrapper{
         display: none;
     }
 

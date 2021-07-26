@@ -23,18 +23,6 @@
     font-size: 25px
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .Main_body_text h1{
     color: #fff;
     font-size: clamp( 5vw, 5vw, 80vh);
@@ -61,5 +49,40 @@ h1.Welcome_text_3{
 }
 
 .Main_body_model img{
-    width: 110%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    .Main_body_wrapper_padding{
+        display: block;
+        padding-top: 100px;
+    }
+
+    .Main_body_text h1{
+        color: #fff;
+        font-size: clamp( 10vw, 5vw, 80vh);
+    
+    }
+
+    .Main_project{
+        display: flex;
+        align-items: center;
+        font-size: clamp( 4vw, 1vw, 60vh);
+        z-index: 1;
+        padding: 50px 0px;
+    }
+
+    h1.Welcome_text_3{
+        color: aqua;
+    }
+
+    .Social_Links_icons{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+
+    .Social_Links_icons_div{
+        padding: 0px 5%;
+    }
 }

@@ -8,6 +8,7 @@
   height: auto;
   color: white;
   position: fixed;
+  background-color:#000;
 }
 
 .Navbar_padding {
@@ -56,17 +57,26 @@
   }
   
   #Mobile_div{
-    height: auto;
+    height: 50vh;
     width: 100%;
     position: absolute;
     background-color: rgb(0, 0, 0);
     z-index: 2;
+  }
+
+  .Mobile_div_padding{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .Mobile_Links{
     text-align: center;
     animation: fadeIn 1s;
     display: block;
+    width: 100vw;
   }
   
   @keyframes fadeIn {
@@ -92,9 +102,12 @@
 
   .Nav_Social_Links_icons_padding{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 50px;
   }
   
+  .Nav_Social_Links_icons_div{
+    padding: 0px 5%;
+  }
 }
 

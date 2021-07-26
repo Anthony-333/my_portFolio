@@ -6,8 +6,9 @@ import menu2 from "react-useanimations/lib/menu2";
 
 import Scrollspy from "react-scrollspy";
 
-import { FaFacebookF, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
-
+import { FaPhoneAlt } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
+import { IoLogoWhatsapp } from "react-icons/io";
 function myFunction() {
   var x = document.getElementById("Mobile_div");
   if (x.style.display === "block") {
@@ -83,17 +84,15 @@ class Navbar extends React.Component {
               <div className="Nav_Social_Links_icons">
                 <div className="Nav_Social_Links_icons_padding">
                   <div className="Nav_Social_Links_icons_div">
-                    <FaFacebookF size="25" />
+                    <GrMail size="25" />
                   </div>
                   <div className="Nav_Social_Links_icons_div">
-                    <FaTwitter size="25" />
+                    <IoLogoWhatsapp size="25" />
                   </div>
                   <div className="Nav_Social_Links_icons_div">
-                    <FaGithub size="25" />
+                    <FaPhoneAlt size="25" />
                   </div>
-                  <div className="Nav_Social_Links_icons_div">
-                    <FaLinkedinIn size="25" />
-                  </div>
+
                 </div>
               </div>
             </div>
