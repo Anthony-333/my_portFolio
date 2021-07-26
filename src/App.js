@@ -15,11 +15,9 @@ function App() {
   return (
     <div className="Div_wrapper">
       <Navbar />
-      <div className="Flex">
-        <LeftSidebar />
-        <Main />
-      </div>
-      
+
+      <LeftSidebar />
+      <Main />
     </div>
   );
 }
