@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="Div_wrapper">
       <Navbar />
-
       <LeftSidebar />
       <Main />
     </div>

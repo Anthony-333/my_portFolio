@@ -11,8 +11,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 50px 0px;
+    padding: 50px 50px;
     
+}
+
+.Social_Links_icons{
+display: none;
 }
 
 .Social_Links_icons, .Main_body_text, .Main_body_model{
@@ -55,7 +59,7 @@ h1.Welcome_text_3{
 @media only screen and (max-width: 991px) {
     .Main_body_wrapper_padding{
         display: block;
-        padding-top: 100px;
+        padding: 100px 0px;
     }
 
     .Main_body_text h1{

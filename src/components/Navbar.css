@@ -8,7 +8,7 @@
   height: auto;
   color: white;
   position: fixed;
-  background-color:#000;
+  background-color: transparent;
 }
 
 .Navbar_padding {
@@ -48,6 +48,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .Navbar_wrapper {
+    background-color: #000;
+  }
+
   .toggle {
     display: flex;
   }
@@ -55,8 +59,8 @@
   .Navbar_Links {
     display: none;
   }
-  
-  #Mobile_div{
+
+  #Mobile_div {
     height: 50vh;
     width: 100%;
     position: absolute;
@@ -64,21 +68,21 @@
     z-index: 2;
   }
 
-  .Mobile_div_padding{
+  .Mobile_div_padding {
     height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .Mobile_Links{
+
+  .Mobile_Links {
     text-align: center;
     animation: fadeIn 1s;
     display: block;
     width: 100vw;
   }
-  
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -87,27 +91,25 @@
       opacity: 1;
     }
   }
-  
-  
-  .Mobile_navlinks{
+
+  .Mobile_navlinks {
     margin: 20px auto;
   }
-  
-  .Mobile_navlinks a{
+
+  .Mobile_navlinks a {
     text-decoration: none;
     list-style-type: none;
     font-size: 30px;
-    color:#ffffff;
+    color: #ffffff;
   }
 
-  .Nav_Social_Links_icons_padding{
+  .Nav_Social_Links_icons_padding {
     display: flex;
     justify-content: center;
     padding: 10px 50px;
   }
-  
-  .Nav_Social_Links_icons_div{
+
+  .Nav_Social_Links_icons_div {
     padding: 0px 5%;
   }
 }
-
