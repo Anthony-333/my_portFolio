@@ -57,6 +57,12 @@ h1.Welcome_text_3{
     width: 100%;
 }
 
+.Modeller{
+    display: flex;
+}
+
+
+
 @media only screen and (max-width: 991px) {
     .Main_body_wrapper_padding{
         display: block;

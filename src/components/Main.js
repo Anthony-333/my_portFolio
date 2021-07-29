@@ -39,6 +39,12 @@ function Main() {
           <h1 className="Welcome_text_1">Hi,</h1>
           <h1 className="Welcome_text_2">I'm&nbsp;Anthony</h1>
           <h1 className="Welcome_text_3">Full&nbsp;Stack&nbsp;Web&nbsp;Dev</h1>
+          <div className="Modeller">
+            <h1 className="Welcome_text_2">And</h1>
+          <h1 className="Welcome_text_3">&nbsp;3D&nbsp;Modeller</h1>
+          </div>
+          
+
 
           <div className="Main_project">
             <Scrollspy>

@@ -7,23 +7,11 @@ import Main from "./components/Main";
 
 import Particles from "./components/Particles";
 
-
-
-function App() {
+function Apps() {
   return (
-    <div className="Main_wrapping">
-      <div className="html_wrap">
-        <Navbar />
-        <LeftSidebar />
-        <Main />
-      </div>
 
-      <div className="canvas_wrap">
-        <Particles />
-      </div>
-    </div>
+      <Particles />
   );
 }
 
-
-export default App;
+export default Apps;
