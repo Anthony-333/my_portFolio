@@ -1,0 +1,95 @@
+.Rightsidebar_wrapper {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: auto;
+  background-color: transparent;
+}
+
+.Rightsidebar_padding {
+  height: 100vh;
+  width: 150px;
+  padding: 0px 30px;
+  display: flex-end;
+  justify-content: center;
+}
+
+.Rightsidebar_navigator {
+  position: relative;
+  top: 30%;
+}
+
+.Marker_div {
+  text-align: right;
+  width: 200px;
+}
+
+.Marker {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.Marker_text {
+  color: #fff;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.Marker_circle {
+  width: 25px;
+  position: absolute;
+}
+
+.whitedot {
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Scroll_text {
+  color: white;
+  transform: rotate(90deg);
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+
+  /* IE */
+  -ms-transform: rotate(90deg);
+
+  /* Opera */
+  -o-transform: rotate(90deg);
+}
+
+.Scroll_down{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    
+}
+
+.Scroll_text_div, .Scroll_arrow_down{
+    padding: 10px 0px;
+}
+
+.Scroll_arrow_down{
+    display: flex;
+    justify-content: center;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import "./Rightsidebar.css";
 
 import {
   FaFacebookF,
@@ -14,6 +15,18 @@ import menu2 from "react-useanimations/lib/menu2";
 
 import Myself from "./img/self.png";
 import Scrollspy from "react-scrollspy";
+
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
+AOS.init({
+
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, // whether elements should animate out while scrolling past them
+
+});
 
 function Main() {
   return (
@@ -36,7 +49,14 @@ function Main() {
 
         <div className="Main_body_text">
           <div className="Main_body_text_padding">
-            <h1 className="Welcome_text_1">Hi,</h1>
+            <h1
+              className="Welcome_text_1"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+             
+            >
+              Hi,
+            </h1>
             <h1 className="Welcome_text_2">I'm&nbsp;Anthony</h1>
             <div className="Rubber_band_div">
               <h1 className="Welcome_text_3">F</h1>
@@ -84,6 +104,14 @@ function Main() {
         <div className="Main_body_model">
           <img src={Myself} alt="" />
         </div>
+
+        
+
+
+
+
+
+
       </div>
     </div>
   );

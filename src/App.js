@@ -3,6 +3,7 @@ import "./App.css";
 
 import Navbar from "./components/Navbar";
 import LeftSidebar from "./components/LeftSidebar";
+import Rightsidebar from "./components/Rightsidebar";
 import Main from "./components/Main";
 
 import Particles from "./components/Particles";
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <LeftSidebar />
         <Main />
+        <Rightsidebar />
       </div>
 
       <div className="canvas_wrap">

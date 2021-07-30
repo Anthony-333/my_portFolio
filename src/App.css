@@ -8,15 +8,17 @@
 
 body{
   background-color: #000;
+  overflow-x: hidden;
 }
 
 .html_wrap{
+  display: flex;
   position: absolute;
   z-index: 2 ;
 }
 
 .canvas_wrap{
-  position: relative;
+  position: fixed;
   height: 100vh;
   width: 100%;
   z-index: 1;
