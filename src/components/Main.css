@@ -1,99 +1,182 @@
-.Main_body_wrapper{
-    width: 100%;
-    height: 100vh;
+.Main_body_wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.Main_body_wrapper_padding {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 50px 50px;
+  justify-content: center;
+}
+
+.Social_Links_icons {
+  display: none;
+}
+
+.Social_Links_icons,
+.Main_body_text,
+.Main_body_model {
+  padding: 0px 25px;
+}
+
+.Social_Links_icons_div {
+  font-size: 25px;
+}
+
+.Main_body_text h1 {
+  color: #fff;
+  font-size: clamp(5vw, 5vw, 80vh);
+}
+
+.Main_project p {
+  color: #fff;
+}
+
+.Main_project {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.5vw, 1vw, 60vh);
+  z-index: 1;
+}
+
+.arrow_down {
+  color: aqua;
+}
+
+.Main_body_model img {
+  width: 100%;
+}
+
+.Modeller {
+  display: flex;
+}
+
+.Rubber_band_div {
+  display: flex;
+}
+
+h1.Welcome_text_3 {
+  color: aqua;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+
+h1.Welcome_text_3:hover {
+  color: #fff;
+  animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.Main_body_text{
     display: flex;
-    align-items: start;
     justify-content: center;
-
 }
-
-.Main_body_wrapper_padding{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 50px 50px;
-    justify-content: center;
-    
-}
-
-.Social_Links_icons{
-display: none;
-}
-
-.Social_Links_icons, .Main_body_text, .Main_body_model{
-    padding: 0px 25px;
-}
-
-.Social_Links_icons_div{
-    font-size: 25px
-}
-
-.Main_body_text h1{
-    color: #fff;
-    font-size: clamp( 5vw, 5vw, 80vh);
-
-}
-
-h1.Welcome_text_3{
-    color: aqua;
-}
-
-.Main_project p{
-    color: #fff;
-}
-
-.Main_project{
-    display: flex;
-    align-items: center;
-    font-size: clamp( 1.5vw, 1vw, 60vh);
-    z-index: 1;
-}
-
-.arrow_down{
-    color: aqua;
-}
-
-.Main_body_model img{
-    width: 100%;
-}
-
-.Modeller{
-    display: flex;
-}
-
-
 
 @media only screen and (max-width: 991px) {
-    .Main_body_wrapper_padding{
-        display: block;
-        padding: 100px 0px;
-    }
+  .Main_body_wrapper_padding {
+    display: block;
+    padding: 100px 0px;
+  }
 
-    .Main_body_text h1{
-        color: #fff;
-        font-size: clamp( 10vw, 5vw, 80vh);
-    
-    }
+  .Main_body_text h1 {
+    color: #fff;
+    font-size: clamp(10vw, 5vw, 80vh);
+  }
 
-    .Main_project{
-        display: flex;
-        align-items: center;
-        font-size: clamp( 4vw, 1vw, 60vh);
-        z-index: 1;
-        padding: 50px 0px;
-    }
+  .Main_project {
+    display: flex;
+    align-items: center;
+    font-size: clamp(4vw, 1vw, 60vh);
+    z-index: 1;
+    padding: 50px 0px;
+  }
 
-    h1.Welcome_text_3{
-        color: aqua;
+  h1.Welcome_text_3 {
+    color: aqua;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: inline-block;
+  }
+  
+  h1.Welcome_text_3:hover {
+    color: #fff;
+    animation-name: rubberBand;
+  }
+  
+  @keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
     }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
 
-    .Social_Links_icons{
-        display: flex;
-        justify-content: center;
-        padding: 20px 0px;
-    }
+  .Social_Links_icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
 
-    .Social_Links_icons_div{
-        padding: 0px 5%;
-    }
+  .Social_Links_icons_div {
+    padding: 0px 5%;
+  }
 }
