@@ -1,17 +1,10 @@
 .Main_body_wrapper {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: start;
   justify-content: center;
-}
-
-.Main_body_wrapper_padding {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  padding: 50px 50px;
-  justify-content: center;
+  
 }
 
 .Social_Links_icons {
@@ -22,6 +15,10 @@
 .Main_body_text,
 .Main_body_model {
   padding: 0px 25px;
+}
+
+.Main_body_model {
+  padding-top: 100px;
 }
 
 .Social_Links_icons_div {
@@ -49,6 +46,7 @@
 }
 
 .Main_body_model img {
+ 
   width: 100%;
 }
 
@@ -71,6 +69,23 @@ h1.Welcome_text_3 {
 h1.Welcome_text_3:hover {
   color: #fff;
   animation-name: rubberBand;
+}
+
+.One {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 50px 50px;
+  justify-content: center;
+}
+
+.Two{
+  height: 100vh;
+}
+
+.Three{
+  height: 100vh;
 }
 
 @keyframes rubberBand {
@@ -108,8 +123,14 @@ h1.Welcome_text_3:hover {
     justify-content: center;
 }
 
+
+
 @media only screen and (max-width: 991px) {
-  .Main_body_wrapper_padding {
+  .Main_body_model {
+    padding-top: 0px;
+  }
+
+  .One {
     display: block;
     padding: 100px 0px;
   }

@@ -30,20 +30,12 @@
   padding: 10px 0px;
 }
 
-.Marker_text {
-  color: #fff;
-}
 
 .dots {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
-}
-
-.Marker_circle {
-  width: 25px;
-  position: absolute;
 }
 
 .whitedot {
@@ -73,23 +65,68 @@
   -o-transform: rotate(90deg);
 }
 
-.Scroll_down{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-    
+.Scroll_down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
-.Scroll_text_div, .Scroll_arrow_down{
-    padding: 10px 0px;
+.Scroll_text_div,
+.Scroll_arrow_down {
+  padding: 10px 0px;
 }
 
-.Scroll_arrow_down{
-    display: flex;
-    justify-content: center;
+.Scroll_arrow_down {
+  display: flex;
+  justify-content: center;
 }
+
+
+
+
+.Marker_circle1, .Marker_circle2,
+.Marker_circle3{
+  -moz-border-radius: 50px/50px;
+  -webkit-border-radius: 50px 50px;
+  border-radius: 50px/50px;
+  border: solid 3px transparent;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.active {
+  border: solid 3px #00E0FF;
+  animation: fadeIn 1s;
+  
+}
+
+.Marker_text1,
+.Marker_text2,
+.Marker_text3,
+.Marker_text4 {
+  color: transparent;
+  font-size: 15px;
+}
+
+.Marker_text_active{
+  color: #fff;
+  animation: fadeIn 1s;
+}
+
