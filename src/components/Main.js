@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useRef, Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei/core/useGLTF";
 import "./Main.css";
 import "./Rightsidebar.css";
+import "./About.css";
 
 import {
   FaFacebookF,
@@ -25,6 +28,23 @@ AOS.init({
   once: false, // whether animation should happen only once - while scrolling down
   mirror: true, // whether elements should animate out while scrolling past them
 });
+
+function Reactjsmodel(props) {
+  const group = useRef()
+  const { nodes, materials } = useGLTF('/reactjs.glb')
+  return (
+    <group ref={group} {...props} dispose={null}>
+      <mesh
+        geometry={nodes.Curve001.geometry}
+        material={materials['Material.003']}
+        rotation={[Math.PI / 2, -0.52, 0]}
+        scale={9.91}
+      />
+      <mesh geometry={nodes.Cube002.geometry} material={materials['Material.001']} />
+      <mesh geometry={nodes.Cube002_1.geometry} material={materials['Material.002']} />
+    </group>
+  )
+}
 
 function Main() {
   return (
@@ -100,20 +120,22 @@ function Main() {
           </div>
 
           <div className="Main_body_model">
-            <img src={Myself} alt="" />
+      <img src={Myself} alt="" />
           </div>
         </section>
 
-        <div className="Section_two">
-          <section className="Two"></section>
-        </div>
+     
+          <section className="Two">
+          <div className="About_wrap">
+            
+          </div>
+          </section>
+      
 
-        <div className="Section_Three">
-           <section className="Three">
-          
-        </section>
-        </div>
-       
+          <section className="Three">
+            
+          </section>
+  
       </div>
     </div>
   );

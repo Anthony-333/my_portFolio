@@ -9,6 +9,7 @@
   color: white;
   position: fixed;
   background-color: transparent;
+  z-index: 999999;
 }
 
 .Navbar_padding {

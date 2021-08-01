@@ -1,4 +1,6 @@
 import React, { useRef, Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei/core/useGLTF";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -7,8 +9,6 @@ import Rightsidebar from "./components/Rightsidebar";
 import Main from "./components/Main";
 
 import Particles from "./components/Particles";
-
-
 
 function App() {
   return (
@@ -26,6 +26,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
