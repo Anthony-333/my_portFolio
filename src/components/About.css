@@ -1,0 +1,129 @@
+
+.About_padding {
+  padding: 40px;
+}
+
+.About_intro_wrapper {
+  display: inline-block;
+}
+
+h1.About_me_text {
+  color: aqua;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  display: inline-block;
+  font-size: clamp(10vw, 5vw, 80vh);
+}
+
+h1.About_me_text:hover {
+  color: #fff;
+  animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.About_text {
+  color: #fff;
+  font-size: clamp(5vw, 5vw, 80vh);
+}
+
+.Skills_tiles_wrapper{
+    padding: 50px 0px;
+    display:flex;
+    justify-content: center;
+}
+
+.Skills_tiles_padding{
+    display: block;
+   
+}
+
+.tiles_divider{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+
+.tiles_div {
+  height: auto;
+  width: auto;
+  border: solid 3px #00D8FF;
+  border-radius: 15%;
+  margin: 0px 10px;
+}
+
+
+
+.tiles_img{
+    width: 100%;
+}
+
+.tiles_div_padding{
+    padding: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    h1.About_me_text {
+        color: aqua;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        display: inline-block;
+        font-size: clamp(3vw, 3vw, 80vh);
+      }
+
+      .About_text {
+        color: #fff;
+        font-size: clamp(2vw, 1.5vw, 80vh);
+      }
+
+      .About_padding {
+        padding: 0px 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .About_intro_wrapper {
+        display: inline-block;
+        width: 50%;
+      }
+
+      .Skills_tiles_wrapper{
+        padding: 50px 0px;
+        display:flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    
+}

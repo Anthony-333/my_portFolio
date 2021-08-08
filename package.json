@@ -19,6 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^2.0.0",
     "react-scrollspy": "^3.4.3",
+    "react-tilt": "^0.1.4",
     "react-useanimations": "^2.0.6",
     "run": "^1.4.0",
     "three": "^0.130.1",

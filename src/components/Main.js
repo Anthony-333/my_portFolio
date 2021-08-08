@@ -1,6 +1,7 @@
 import React, { useRef, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei/core/useGLTF";
+import { OrbitControls } from "@react-three/drei";
 import "./Main.css";
 import "./Rightsidebar.css";
 import "./About.css";
@@ -17,7 +18,18 @@ import UseAnimations from "react-useanimations";
 import menu2 from "react-useanimations/lib/menu2";
 
 import Myself from "./img/self.png";
+import Reacticon from "./img/reactjs-icon.png";
+import Git from "./img/Git.png";
+import Tailwind from "./img/Tailwind.png";
+import Firebase from "./img/Firebase.png";
+import Monggodb from "./img/Monggodb.png";
+import Nodejs from "./img/Nodejs.png";
+import Wp from "./img/Wordpress.png";
+import Redux from "./img/Redux.png";
+import Express from "./img/Express.png";
+
 import Scrollspy from "react-scrollspy";
+import Tilt from "react-tilt";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -28,23 +40,6 @@ AOS.init({
   once: false, // whether animation should happen only once - while scrolling down
   mirror: true, // whether elements should animate out while scrolling past them
 });
-
-function Reactjsmodel(props) {
-  const group = useRef()
-  const { nodes, materials } = useGLTF('/reactjs.glb')
-  return (
-    <group ref={group} {...props} dispose={null}>
-      <mesh
-        geometry={nodes.Curve001.geometry}
-        material={materials['Material.003']}
-        rotation={[Math.PI / 2, -0.52, 0]}
-        scale={9.91}
-      />
-      <mesh geometry={nodes.Cube002.geometry} material={materials['Material.001']} />
-      <mesh geometry={nodes.Cube002_1.geometry} material={materials['Material.002']} />
-    </group>
-  )
-}
 
 function Main() {
   return (
@@ -119,23 +114,171 @@ function Main() {
             </div>
           </div>
 
-          <div className="Main_body_model">
-      <img src={Myself} alt="" />
+          <Tilt className="Tilt" options={{ max: 35, perspective: 2000 }}>
+            <div className="Main_body_model">
+              <img src={Myself} alt="" />
+            </div>
+          </Tilt>
+        </section>
+
+        <section className="Two">
+          <div className="About_padding">
+            <div className="About_intro_wrapper">
+              <div className="About_title_wrapper">
+                <h1 className="About_me_text">A</h1>
+                <h1 className="About_me_text">l</h1>
+                <h1 className="About_me_text">l</h1>
+                <h1 className="About_me_text">&nbsp;</h1>
+                <h1 className="About_me_text">A</h1>
+                <h1 className="About_me_text">b</h1>
+                <h1 className="About_me_text">o</h1>
+                <h1 className="About_me_text">u</h1>
+                <h1 className="About_me_text">t</h1>
+                <h1 className="About_me_text">&nbsp;</h1>
+                <h1 className="About_me_text">M</h1>
+                <h1 className="About_me_text">e</h1>
+              </div>
+
+              <div className="About_intro">
+                <p className="About_text">
+                  Hi, This is John Anthony Oling I'm Full-Stack Developer from
+                  Philippines.
+                  <br />
+                  <br />
+                  My main experties are UI/UX I'am very passionate on
+                  incorporating timely designs, Effects, and animations in my
+                  projects.
+                  <br />
+                  <br />
+                  As time goes by I'll be able to upgrade my back-end skills by
+                  learning it on my own because of that I developed so much
+                  skills without depending on others.
+                  <br />
+                  <br />
+                  I'am very professional and consistent on what I'm doing
+                  Innovative ideas, creativity, and client satisfaction is
+                  always my goal in every project.
+                </p>
+              </div>
+            </div>
+
+            <div className="Skills_tiles_wrapper">
+              <div className="Skills_tiles_padding">
+                <div className="tiles_divider">
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div
+                      className="tiles_div"
+                      data-tilt
+                      data-tilt-glare
+                      data-tilt-max-glare="0.8"
+                    >
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Reacticon} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div className="tiles_div">
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Redux} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div className="tiles_div">
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Firebase} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+                </div>
+
+                <div className="tiles_divider">
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div className="tiles_div">
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Tailwind} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div className="tiles_div">
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Nodejs} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div className="tiles_div">
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Monggodb} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+                </div>
+
+                <div className="tiles_divider">
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div className="tiles_div">
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Wp} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div className="tiles_div">
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Git} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+
+                  <Tilt
+                    className="Tilt"
+                    options={{ max: 35, perspective: 500 }}
+                  >
+                    <div className="tiles_div">
+                      <div className="tiles_div_padding">
+                        <img className="tiles_img" src={Express} alt="" />
+                      </div>
+                    </div>
+                  </Tilt>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-     
-          <section className="Two">
-          <div className="About_wrap">
-            
-          </div>
-          </section>
-      
-
-          <section className="Three">
-            
-          </section>
-  
+        <section className="Three"></section>
       </div>
     </div>
   );

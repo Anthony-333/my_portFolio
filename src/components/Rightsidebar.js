@@ -9,19 +9,17 @@ import Circle from "./img/circle.png";
 import $ from "jquery";
 
 function Rightsidebar() {
-
-  
-  $(function() {
-    $(window).scroll(function() {
+  $(function () {
+    $(window).scroll(function () {
       updateNav1();
     });
 
     updateNav1();
 
     function updateNav1() {
-      $(".One").each(function(index) {
+      $(".One").each(function (index) {
         var topOffset = $(this).offset().top;
-        if (topOffset - $(window).scrollTop() < 50) {
+        if (topOffset - $(window).scrollTop() < 200) {
           $(".Marker_circle1").addClass("active");
           $(".Marker_text1").addClass("Marker_text_active");
         } else {
@@ -32,17 +30,17 @@ function Rightsidebar() {
     }
   });
 
-  $(function() {
-    $(window).scroll(function() {
+  $(function () {
+    $(window).scroll(function () {
       updateNav2();
     });
 
     updateNav2();
 
     function updateNav2() {
-      $(".Two").each(function(index) {
+      $(".Two").each(function (index) {
         var topOffset = $(this).offset().top;
-        if (topOffset - $(window).scrollTop() < 50) {
+        if (topOffset - $(window).scrollTop() < 200) {
           $(".Marker_circle1").removeClass("active");
           $(".Marker_text1").removeClass("Marker_text_active");
 
@@ -56,17 +54,17 @@ function Rightsidebar() {
     }
   });
 
-  $(function() {
-    $(window).scroll(function() {
+  $(function () {
+    $(window).scroll(function () {
       updateNav3();
     });
 
     updateNav3();
 
     function updateNav3() {
-      $(".Three").each(function(index) {
+      $(".Three").each(function (index) {
         var topOffset = $(this).offset().top;
-        if (topOffset - $(window).scrollTop() < 50) {
+        if (topOffset - $(window).scrollTop() < 200) {
           $(".Marker_circle2").removeClass("active");
           $(".Marker_text2").removeClass("Marker_text_active");
 
@@ -91,17 +89,17 @@ function Rightsidebar() {
 
             <div className="dots">
               <div className="Marker_circle1"></div>
-              <span class="whitedot"></span>
+              <span className="whitedot"></span>
             </div>
           </div>
-          
+
           <div className="Marker">
             <div className="Marker_div">
               <p className="Marker_text2">About</p>
             </div>
             <div className="dots">
-            <div className="Marker_circle2"></div>              
-            <span class="whitedot"></span>
+              <div className="Marker_circle2"></div>
+              <span className="whitedot"></span>
             </div>
           </div>
           <div className="Marker">
@@ -109,8 +107,8 @@ function Rightsidebar() {
               <p className="Marker_text3">Projects</p>
             </div>
             <div className="dots">
-            <div className="Marker_circle3"></div> 
-              <span class="whitedot"></span>
+              <div className="Marker_circle3"></div>
+              <span className="whitedot"></span>
             </div>
           </div>
           <div className="Marker">
@@ -118,8 +116,7 @@ function Rightsidebar() {
               <p className="Marker_text4">Services</p>
             </div>
             <div className="dots">
-
-              <span class="whitedot"></span>
+              <span className="whitedot"></span>
             </div>
           </div>
         </div>

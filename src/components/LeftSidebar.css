@@ -4,6 +4,7 @@
   width: auto;
   display: flex;
   align-items: center;
+  z-index: 4;
 }
 
 .Leftsidebar_wrapper_padding {
@@ -38,6 +39,7 @@
 .Contact_Links_icons_div {
     padding: 10px 0px;
     color: #fff;
+    cursor: pointer;
 }
 
 .Social_Links_icons_div:hover{

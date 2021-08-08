@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.Main_body_wrapper_padding{
+  display: inline-block;
+}
+
 .Social_Links_icons {
   display: none;
 }
@@ -22,6 +26,7 @@
 
 .Social_Links_icons_div {
   font-size: 25px;
+  cursor: pointer;
 }
 
 .Main_body_text h1 {
@@ -70,16 +75,17 @@ h1.Welcome_text_3:hover {
 }
 
 .One {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
   align-items: center;
+  
   padding: 50px 50px;
   justify-content: center;
 }
 
 .Two {
-  height: 100vh;
+  height: auto;
 }
 
 .Three {
@@ -128,7 +134,7 @@ h1.Welcome_text_3:hover {
 
   .One {
     display: block;
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
   }
 
   .Main_body_text h1 {
@@ -195,5 +201,6 @@ h1.Welcome_text_3:hover {
 
   .Social_Links_icons_div {
     padding: 0px 5%;
+    cursor: pointer;
   }
 }
