@@ -156,7 +156,7 @@ function Main() {
                   <br />
                   <br />
                   I'am very professional and consistent on what I'm doing
-                  Innovative ideas, creativity, and client satisfaction is
+                  Innovative, creative, and client satisfaction is
                   always my goal in every project.
                 </p>
               </div>
