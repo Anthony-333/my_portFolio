@@ -4,7 +4,7 @@ import "./Rightsidebar.css";
 import UseAnimations from "react-useanimations";
 import arrowDown from "react-useanimations/lib/arrowDown";
 
-import Circle from "./img/circle.png";
+import Circle from "../img/circle.png";
 
 import $ from "jquery";
 

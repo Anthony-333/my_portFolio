@@ -1,14 +1,12 @@
 import React, { useRef, Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei/core/useGLTF";
 import "./App.css";
 
-import Navbar from "./components/Navbar";
-import LeftSidebar from "./components/LeftSidebar";
-import Rightsidebar from "./components/Rightsidebar";
-import Main from "./components/Main";
+import Navbar from "./components/navBar/Navbar";
+import LeftSidebar from "./components/leftSidebar/LeftSidebar";
+import Rightsidebar from "./components/rightSidebar/Rightsidebar";
+import Main from "./components/Main/Main";
 
-import Particles from "./components/Particles";
+import Particles from "./components/particles/Particles";
 
 function App() {
   return (

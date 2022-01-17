@@ -1,9 +1,5 @@
 import React, { useRef, Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei/core/useGLTF";
-import { OrbitControls } from "@react-three/drei";
 import "./Main.css";
-import "./Rightsidebar.css";
 import "./About.css";
 
 import {
@@ -14,32 +10,25 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 
-import UseAnimations from "react-useanimations";
-import menu2 from "react-useanimations/lib/menu2";
 
-import Myself from "./img/self.png";
-import Reacticon from "./img/reactjs-icon.png";
-import Git from "./img/Git.png";
-import Tailwind from "./img/Tailwind.png";
-import Firebase from "./img/Firebase.png";
-import Monggodb from "./img/Monggodb.png";
-import Nodejs from "./img/Nodejs.png";
-import Wp from "./img/Wordpress.png";
-import Redux from "./img/Redux.png";
-import Express from "./img/Express.png";
+import Myself from "../img/self.png";
+import Reacticon from "../img/reactjs-icon.png";
+import Git from "../img/Git.png";
+import Tailwind from "../img/Tailwind.png";
+import Firebase from "../img/Firebase.png";
+import Monggodb from "../img/Monggodb.png";
+import Nodejs from "../img/Nodejs.png";
+import Wp from "../img/Wordpress.png";
+import Redux from "../img/Redux.png";
+import Express from "../img/Express.png";
 
 import Scrollspy from "react-scrollspy";
 import Tilt from "react-tilt";
 
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
 
-AOS.init({
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: true, // whether elements should animate out while scrolling past them
-});
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import Projects from "../Project/Projects";
+
 
 function Main() {
   return (
@@ -65,8 +54,7 @@ function Main() {
             <div className="Main_body_text_padding">
               <h1
                 className="Welcome_text_1"
-                data-aos="fade-up"
-                data-aos-duration="2000"
+              
               >
                 Hi,
               </h1>
@@ -124,7 +112,7 @@ function Main() {
         <section className="Two">
           <div className="About_padding">
             <div className="About_intro_wrapper">
-              <div className="About_title_wrapper">
+              <div className="About_title_wrapper" >
                 <h1 className="About_me_text">A</h1>
                 <h1 className="About_me_text">l</h1>
                 <h1 className="About_me_text">l</h1>
@@ -278,7 +266,10 @@ function Main() {
           </div>
         </section>
 
-        <section className="Three"></section>
+        <section className="Three">
+            <Projects />
+
+        </section>
       </div>
     </div>
   );

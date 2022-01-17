@@ -1,6 +1,6 @@
 
 .About_padding {
-  padding: 40px;
+  padding: 40px 40px 0px 40px;
 }
 
 .About_intro_wrapper {
@@ -53,7 +53,7 @@ h1.About_me_text:hover {
 
 .About_text {
   color: #fff;
-  font-size: clamp(5vw, 5vw, 80vh);
+  font-size: clamp(4vw, 4vw, 80vh);
 }
 
 .Skills_tiles_wrapper{
@@ -104,7 +104,7 @@ h1.About_me_text:hover {
 
       .About_text {
         color: #fff;
-        font-size: clamp(2vw, 1.5vw, 80vh);
+        font-size: clamp(1.8vw, 1.8vw, 80vh);
       }
 
       .About_padding {

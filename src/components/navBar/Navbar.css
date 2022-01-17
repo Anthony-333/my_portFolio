@@ -1,6 +1,6 @@
 @font-face {
   font-family: atmospheric;
-  src: url(../misc/aAtmospheric.ttf);
+  src: url(../../misc/aAtmospheric.ttf);
 }
 
 .Navbar_wrapper {
@@ -8,8 +8,11 @@
   height: auto;
   color: white;
   position: fixed;
-  background-color: transparent;
   z-index: 999999;
+}
+
+.nav__black {
+  background-color: #111;
 }
 
 .Navbar_padding {
